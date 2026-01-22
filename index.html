@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text-editor</title>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="toolbar">
+      <button id="bold-btn"><b>B</b></button>
+      <button id="italic-btn"><i>I</i></button>
+      <button id="underline-btn"><u>U</u></button>
+      <button id="number-btn">
+        <img src="images/orderlist.jpg" alt="Number Icon"/>
+      </button>
+      <button id="bullet-btn">
+          <img src="images/unorderedlist.svg" alt="points Icon">
+      <button id="left-align-btn">
+          <img src="images/paragraph-left.webp" alt="left arrow">
+      </button>
+      <button id="right-align-btn">
+          <img src="images/paragraph-right.svg" alt="right arrow">
+      </button>
+      <button id="center-align-btn">
+          <img src="images/paragraph-center.svg" alt="Center">
+      </button>
+        <select id="font-size-select">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option> 
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>     
+        </select> 
+        <select id="font-family-select">
+            <option value="Arial">Arial</option>
+            <option value="'Roboto', sans-serif">Roboto</option>
+            <option value="'Open Sans', sans-serif">Open Sans</option>
+            <option value="'Poppins', sans-serif">Poppins</option>
+            <option value="'Times New Roman', serif">Times New Roman</option>
+            <option value="'Courier New', monospace">Courier New</option>
+        </select>
+        <label for="font-color">Font Color:</label>
+        <input type="color" id="font-color" title="Choose font color">
+      </div>
+      <div id="editor" contenteditable="true"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

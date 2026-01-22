@@ -1,0 +1,181 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:royalblue;
+    margin: 0;
+}
+.container{
+    position: relative;
+    background-color:#f0f0f0;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    width: 700px;
+    text-align: center;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+.toolbar{
+    justify-content: center;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+#editor{
+    width: 95%;
+    height: 100%;
+    margin-top: 40px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1.5px solid #ccc;
+    resize: none;
+    overflow-y: auto;
+    text-align: left;
+    color: black;
+    outline: none;
+}
+#editor:focus{
+    border-color: black;
+}
+#bold-btn{
+    background-color:#f0f0f0;
+    color: black;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-left: 20px;
+    flex-direction: column;
+  
+
+}
+#font-size-select, #font-family-select{
+    width: 80px;
+    margin-top: 5px;
+    align-self: center;
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#bold-btn:hover{
+    background-color: wheat;
+}
+#italic-btn{
+    background-color: #f0f0f0;
+    color:black;
+    font-style: italic;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-left: 10px;
+}
+#italic-btn:hover{
+    background-color: wheat;
+}
+#underline-btn{
+    background-color: #f0f0f0;
+    color:black;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-left: 5px;
+}
+#underline-btn:hover{
+    background-color: wheat;
+}
+#number-btn{
+    background-color: #f0f0f0;
+    color:black;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 0px;  
+}
+#number-btn img{
+    width: 20px;
+    height: 20px;
+}
+#bullet-btn{
+    background-color: #f0f0f0;
+    color:black;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 0px; 
+    border-radius: 5px;
+}
+#bullet-btn img{
+    width: 30px;
+    height: 30px;
+}
+#left-align-btn{
+    background-color: #f0f0f0;
+    color:black;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 0px; 
+    border-radius: 5px;
+}
+#left-align-btn img{
+    width: 25px;
+    height: 25px;
+}
+#right-align-btn{
+    background-color: #f0f0f0;
+    color:black;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 0px; 
+    border-radius: 5px;
+}
+#right-align-btn img{
+    width: 25px;
+    height: 25px;
+}
+#center-align-btn{
+    background-color: #f0f0f0;
+    color:black;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 0px; 
+    border-radius: 5px;
+}
+#center-align-btn img{
+    width: 25px;
+    height: 25px;
+}
+#font-color{
+    width: 40px;
+    height: 30px;
+    cursor: pointer;
+    row-gap: 5px;
+    column-gap: left;
+    
+    padding: 0;
+    display: inline-block;
+    
+}
+label[for="font-color"]{
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: -30px;
+    color: black;
+    white-space: initial;
+    margin-right: -45px;
+    
+    
+}
